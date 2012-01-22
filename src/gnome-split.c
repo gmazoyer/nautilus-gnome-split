@@ -45,11 +45,11 @@ void nautilus_module_initialize(GTypeModule* module) {
 }
 
 void nautilus_module_shutdown(void) {
-    g_print ("Shutting down nautilus-gnome-split extension\n");
+    g_print("Shutting down nautilus-gnome-split extension\n");
 }
 
-void  nautilus_module_list_types(const GType** types,
-                                 int*          num_types) {
-    *types = type_list;
+void nautilus_module_list_types(const GType** types,
+                                int*          num_types) {
+    *types     = type_list;
     *num_types = G_N_ELEMENTS(type_list);
 }
