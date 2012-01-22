@@ -65,9 +65,9 @@ static void gnome_split_merge_callback(NautilusMenuItem* item, GList* files) {
     gchar*   command;
 
     buffer  = g_string_new("gnome-split --merge ");
-    buffer  = g_string_append(buffer, g_file_get_path(files->data));
-    command = buffer->str;
+    g_string_append(buffer, g_file_get_path(files->data));
 
+    command = buffer->str;
     g_string_free(buffer, FALSE);
 
     g_spawn_command_line_async(command, NULL);
@@ -78,9 +78,9 @@ static void gnome_split_split_callback(NautilusMenuItem* item, GList* files) {
     gchar*   command;
 
     buffer  = g_string_new("gnome-split --split ");
-    buffer  = g_string_append(buffer, g_file_get_path(files->data));
-    command = buffer->str;
+    g_string_append(buffer, g_file_get_path(files->data));
 
+    command = buffer->str;
     g_string_free(buffer, FALSE);
 
     g_spawn_command_line_async(command, NULL);
@@ -110,7 +110,7 @@ GList* nautilus_gnome_split_get_file_items(NautilusMenuProvider* provider,
             g_signal_connect(item, "activate",
                         G_CALLBACK(gnome_split_merge_callback),
                         nautilus_file_info_list_copy(files));
-		} else {
+        } else {
             item = nautilus_menu_item_new("NautilusGnomeSplit::split",
                         _("_Split File..."),
                         _("Split this file"),
