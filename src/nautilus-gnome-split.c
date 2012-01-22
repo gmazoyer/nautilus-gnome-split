@@ -41,27 +41,23 @@ GList* nautilus_gnome_split_get_file_items(NautilusMenuProvider* provider,
 static GType gnome_split_type = 0;
 
 static gboolean gnome_split_file_is_mergeable(NautilusFileInfo* file_info) {
-	gchar*   uri_scheme;
-	gchar*   mime_type;
-	gboolean mergeable;
-	
-	mergeable  = TRUE;
-	uri_scheme = nautilus_file_info_get_uri_scheme(file_info);
-	mime_type  = nautilus_file_info_get_mime_type(file_info);
+    gchar*   mime_type;
+    gboolean mergeable;
 
-	if (strcmp(uri_scheme, "file") != 0) {
-		mergeable = FALSE;
-	}
+    mergeable = FALSE;
+    mime_type = nautilus_file_info_get_mime_type(file_info);
 
-	g_free(uri_scheme);
+    if ((strcmp(mime_type, "application/x-extension-xtm") == 0) ||
+        (strcmp(mime_type, "application/x-extension-gsp") == 0) ||
+        (strcmp(mime_type, "application/x-extension-yct") == 0) ||
+        (strcmp(mime_type, "application/x-extension-kk")  == 0) ||
+        (strcmp(mime_type, "application/x-generic-chunk") == 0)) {
+        mergeable = TRUE;
+    }
 
-	if (strncmp (mime_type, "image/", 6) != 0) {
-		mergeable = FALSE;
-	}
+    g_free(mime_type);
 
-	g_free(mime_type);
-	
-	return mergeable;
+    return mergeable;
 }
 
 static void gnome_split_merge_callback(NautilusMenuItem* item, GList* files) {
@@ -122,14 +118,14 @@ GList* nautilus_gnome_split_get_file_items(NautilusMenuProvider* provider,
             g_signal_connect(item, "activate",
                         G_CALLBACK(gnome_split_split_callback),
                         nautilus_file_info_list_copy(files));
-		}
+        }
 
         items = g_list_append(items, item);
 
         return items;
     }
 	
-	return NULL;
+    return NULL;
 }
 
 static void nautilus_gnome_split_menu_provider_iface_init(
@@ -167,7 +163,7 @@ void nautilus_gnome_split_register_type(GTypeModule* module) {
         NULL
     };
 
-	gnome_split_type = g_type_module_register_type(module, G_TYPE_OBJECT,
+    gnome_split_type = g_type_module_register_type(module, G_TYPE_OBJECT,
                 "NautilusGnomeSplit", &info, 0);
 
     g_type_module_add_interface(module, gnome_split_type,
