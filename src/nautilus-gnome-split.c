@@ -62,10 +62,14 @@ static gboolean gnome_split_file_is_mergeable(NautilusFileInfo* file_info) {
 
 static void gnome_split_merge_callback(NautilusMenuItem* item, GList* files) {
     GString* buffer;
+    GFile*   location;
     gchar*   command;
 
-    buffer  = g_string_new("gnome-split --merge ");
-    g_string_append(buffer, g_file_get_path(files->data));
+    buffer   = g_string_new("gnome-split --merge ");
+    location = nautilus_file_info_get_location(files->data);
+
+    g_string_append(buffer, g_file_get_path(location));
+    g_object_unref(location);
 
     command = buffer->str;
     g_string_free(buffer, FALSE);
@@ -75,10 +79,14 @@ static void gnome_split_merge_callback(NautilusMenuItem* item, GList* files) {
 
 static void gnome_split_split_callback(NautilusMenuItem* item, GList* files) {
     GString* buffer;
+    GFile*   location;
     gchar*   command;
 
-    buffer  = g_string_new("gnome-split --split ");
-    g_string_append(buffer, g_file_get_path(files->data));
+    buffer   = g_string_new("gnome-split --split ");
+    location = nautilus_file_info_get_location(files->data);
+
+    g_string_append(buffer, g_file_get_path(location));
+    g_object_unref(location);
 
     command = buffer->str;
     g_string_free(buffer, FALSE);

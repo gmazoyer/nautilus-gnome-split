@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-22 12:19+0100\n"
+"POT-Creation-Date: 2012-01-22 17:46+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/nautilus-gnome-split.c:107
+#: ../src/nautilus-gnome-split.c:115
 msgid "_Merge Files..."
 msgstr ""
 
-#: ../src/nautilus-gnome-split.c:108
+#: ../src/nautilus-gnome-split.c:116
 msgid "Merge all files together"
 msgstr ""
 
-#: ../src/nautilus-gnome-split.c:115
+#: ../src/nautilus-gnome-split.c:123
 msgid "_Split File..."
 msgstr ""
 
-#: ../src/nautilus-gnome-split.c:116
+#: ../src/nautilus-gnome-split.c:124
 msgid "Split this file"
 msgstr ""

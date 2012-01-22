@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nautilus-gnome-split 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-22 12:19+0100\n"
+"POT-Creation-Date: 2012-01-22 17:46+0100\n"
 "PO-Revision-Date: 2012-01-22 12:32+0100\n"
 "Last-Translator: Guillaume Mazoyer <respawneral@gmail.com>\n"
 "Language-Team: French\n"
@@ -17,18 +17,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../src/nautilus-gnome-split.c:107
+#: ../src/nautilus-gnome-split.c:115
 msgid "_Merge Files..."
 msgstr "_Assembler les fichiers..."
 
-#: ../src/nautilus-gnome-split.c:108
+#: ../src/nautilus-gnome-split.c:116
 msgid "Merge all files together"
 msgstr "Assembler tous les fichiers ensemble"
 
-#: ../src/nautilus-gnome-split.c:115
+#: ../src/nautilus-gnome-split.c:123
 msgid "_Split File..."
 msgstr "_Découper le fichier..."
 
-#: ../src/nautilus-gnome-split.c:116
+#: ../src/nautilus-gnome-split.c:124
 msgid "Split this file"
 msgstr "Découper le fichier sélectionné"
