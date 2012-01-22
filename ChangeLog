@@ -1,0 +1,34 @@
+2012-01-22  Guillaume Mazoyer  <respawneral@gmail.com>
+
+	Fix command line to start GNOME Split.
+
+2012-01-22  Guillaume Mazoyer  <respawneral@gmail.com>
+
+	Fix the command line to start GNOME Split.
+
+2012-01-22  Guillaume Mazoyer  <respawneral@gmail.com>
+
+	Fix make dist when trying to compile .po.
+
+2012-01-22  Guillaume Mazoyer  <respawneral@gmail.com>
+
+	Update French translation.
+
+2012-01-22  Guillaume Mazoyer  <respawneral@gmail.com>
+
+	Display 'Merge Files...' entry only when files are mergeable.
+
+2012-01-22  Guillaume Mazoyer  <respawneral@gmail.com>
+
+	Add licence header to the source files.
+
+2012-01-22  Guillaume Mazoyer  <respawneral@gmail.com>
+
+	Add French translation.
+
+2012-01-22  Guillaume Mazoyer  <respawneral@gmail.com>
+
+	Initial commit.
+	
+	First commit for the Nautilus extension of GNOME Split.
+
