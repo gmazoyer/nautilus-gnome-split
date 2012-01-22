@@ -19,3 +19,5 @@ src/Makefile
 src/gnome-split.lo
 src/libnautilus-gnome-split.la
 src/nautilus-gnome-split.lo
+nautilus-gnome-split-*.tar.bz2
+nautilus-gnome-split-*.tar.gz
