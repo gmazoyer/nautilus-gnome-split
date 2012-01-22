@@ -1,5 +1,9 @@
 2012-01-22  Guillaume Mazoyer  <respawneral@gmail.com>
 
+	Remove useless .pot file.
+
+2012-01-22  Guillaume Mazoyer  <respawneral@gmail.com>
+
 	Fix command line to start GNOME Split.
 
 2012-01-22  Guillaume Mazoyer  <respawneral@gmail.com>

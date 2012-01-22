@@ -1,13 +1,13 @@
-Nautilus-Gnome-Split
-====================
+GNOME Split for Nautilus
+========================
 
-The Nautilus-Gnome-Split extension allows you to split/merge files from Nautilus.
+The GNOME Split extension allows you to split/merge files from Nautilus.
 
-Hacking:
-========
+Hacking
+=======
 
 The source code can be retrieved with the following command:
 
-bzr branch bzr://respawner.fr/bzr/nautilus-gnome-split
+  bzr branch bzr://respawner.fr/bzr/nautilus-gnome-split
 
 Patches welcomed!
