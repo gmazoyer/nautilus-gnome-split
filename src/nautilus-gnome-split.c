@@ -109,7 +109,7 @@ GList* nautilus_gnome_split_get_file_items(NautilusMenuProvider* provider,
 
     items = NULL;
 
-    if (g_list_length(files) == 1) {
+    if ((g_list_length(files) == 1) && !nautilus_file_info_is_directory(files->data)) {
         if (gnome_split_file_is_mergeable(files->data)) {
             item = nautilus_menu_item_new("NautilusGnomeSplit::merge",
                         _("_Merge Files..."),
