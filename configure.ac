@@ -1,4 +1,4 @@
-AC_INIT([nautilus-gnome-split],[0.1],[respawneral@gmail.com],[nautilus-gnome-split])
+AC_INIT([nautilus-gnome-split],[0.2],[respawneral@gmail.com],[nautilus-gnome-split])
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_SRCDIR([Makefile.am])
 AC_CONFIG_HEADERS(config.h)

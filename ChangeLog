@@ -1,3 +1,15 @@
+2012-01-23  Guillaume Mazoyer  <respawneral@gmail.com>
+
+	Do not show the menu entry if the user selected a directory.
+
+2012-01-23  Guillaume Mazoyer  <respawneral@gmail.com>
+
+	Minor code format fix.
+
+2012-01-22  Guillaume Mazoyer  <respawneral@gmail.com>
+
+	Update ChangeLog and README. Version 0.1
+
 2012-01-22  Guillaume Mazoyer  <respawneral@gmail.com>
 
 	Remove useless .pot file.
